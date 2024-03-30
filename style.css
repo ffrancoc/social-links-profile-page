@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+
+:root {
+    --green-color: hsl(75, 94%, 57%);
+    --white-color: hsl(0, 0%, 100%);
+    --grey-color: hsl(0, 0%, 20%);
+    --darkgrey-color: hsl(0, 0%, 12%);
+    --ofblack-color: hsl(0, 0%, 8%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--ofblack-color);
+}
+
+p {
+    font-size: 14px;
+}
+
+body>main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body>main>.card-profile {
+    background-color: var(--darkgrey-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    padding: 40px;
+    width: 400px;
+    height: 500px;
+}
+
+body>main>.card-profile>img {
+    width: 80px;
+    border-radius: 100%;
+}
+
+body>main>.card-profile>h1 {
+    font-size: 1.5rem;
+    margin: 10px 0px 10px 0px;
+}
+
+body>main>.card-profile>h4 {
+    color: var(--green-color);
+    font-size: 0.8rem;
+}
+
+body>main>.card-profile>p {
+    font-size: 0.8rem;
+    margin: 10px 0px 10px 0px;
+}
+
+body>main>.card-profile>a {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-color);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 8px 0px 8px 0px;
+    font-size: 0.8rem;
+    height: 45px;
+}
+
+body>main>.card-profile>a:hover {
+    background-color: var(--green-color);
+    color: var(--ofblack-color);
+}
+
+body>main>.attribution {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+body>main>.attribution>a {
+    color: dodgerblue;
+}
+
+@media screen and (max-width: 375px) {
+    body>main>.card-profile {
+        width: unset;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
